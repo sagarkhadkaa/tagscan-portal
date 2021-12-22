@@ -1,7 +1,14 @@
 import "./App.css";
+import Signup from "./components/signup";
+import LoginForm from "./components/loginForm";
 
 function App() {
-    return <h1>TagScan</h1>;
+    return (
+        <div>
+            {/* <Signup /> */}
+            <LoginForm />
+        </div>
+    );
 }
 
 export default App;
