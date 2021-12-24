@@ -47,7 +47,6 @@ Navbar.defaultProps = {
         { title: "Home", href: "#home" },
         { title: "Features", href: "#features" },
         { title: "Services", href: "#services" },
-        { title: "Pricing", href: "#pricing" },
         { title: "Login", href: "Login" },
     ],
 };
