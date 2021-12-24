@@ -4,7 +4,7 @@ import Joi from "joi-browser";
 
 class SignupForm extends Form {
     state = {
-        data: { username: "", password: "", name: "" },
+        data: { name: "", username: "", password: "" },
         errors: {},
     };
 
@@ -21,12 +21,15 @@ class SignupForm extends Form {
 
     render() {
         return (
-            <div>
+            <div
+                styles={{}}
+                className="container mt-3 col-10 col-sm-6 col-md-5 col-lg-4"
+            >
                 <h1>Register</h1>
                 <form onSubmit={this.handleSubmit}>
+                    {this.renderInput("name", "Name")}
                     {this.renderInput("username", "Username")}
                     {this.renderInput("password", "Password", "password")}
-                    {this.renderInput("name", "Name")}
                     {this.renderButton("Register")}
                 </form>
             </div>

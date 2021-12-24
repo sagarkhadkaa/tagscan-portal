@@ -18,14 +18,25 @@ class LoginForm extends Form {
 
     render() {
         return (
-            <div className="my-4  d-flex flex-column align-items-center ">
-                <h1>Login</h1>
-                <form onSubmit={this.handleSubmit}>
-                    {this.renderInput("username", "Username")}
-                    {this.renderInput("password", "Password", "password")}
+            <div className="d-flex justify-content-center ">
+                <div
+                    className="column card bg-light"
+                    style={{ width: "25rem" }}
+                >
+                    <div className="my-4  d-flex flex-column align-items-center ">
+                        <h1>Login</h1>
+                        <form onSubmit={this.handleSubmit}>
+                            {this.renderInput("username", "Username")}
+                            {this.renderInput(
+                                "password",
+                                "Password",
+                                "password"
+                            )}
 
-                    {this.renderButton("Login")}
-                </form>
+                            {this.renderButton("Login")}
+                        </form>
+                    </div>
+                </div>
             </div>
         );
     }
